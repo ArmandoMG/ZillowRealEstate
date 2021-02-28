@@ -57,7 +57,7 @@ Its worth pointing out that thanks to the EDA I found one property that supposed
 First, I separated the data into independendt and dependent variables (my features and my target). Once I did that I used Binary Encoding for the categorical data
 After that, I proceded with the training and test data split with a size of 20%.
 
-For this project I tried with 4 different algorithms adn evaluated each of them to see how well the performed with this dataset. For the evaluation I used cross validation with R² as a score and MAE (Mean Absolute Error)
+For this project I tried with 4 different algorithms and evaluated each of them to see how well the performed with this dataset. For the evaluation I used cross validation with R² as a score and MAE (Mean Absolute Error)
 
 The models I tried were:
 * **Multiple Linear Regression:** Base Model
@@ -70,29 +70,41 @@ The Random forest was far better than the other 3 choices.
 
 * **Multiple Linear Regression:**
 R² (Adjusted): 55.95% 
+
 Cross Validation Score (R²): 49.95%
+
 MAE: 772907.08
+
 
 ![image](https://user-images.githubusercontent.com/24629475/109430454-ccb39380-79be-11eb-9b22-a6f611378cc7.png)
 
 * **Support Vector Regression:**
 R² (Adjusted): 67.17%
+
 Cross Validation Score (R²): 56.66%
+
 MAE: 696211.43
+
 
 ![image](https://user-images.githubusercontent.com/24629475/109430393-734b6480-79be-11eb-809a-db668e9fb71a.png)
 
 * **Decision Tree Regression:**
 R² (Adjusted): 75.55% 
+
 Cross Validation Score (R²): 63.06
+
 MAE: 459040.7235284946
+
 
 ![image](https://user-images.githubusercontent.com/24629475/109430435-b60d3c80-79be-11eb-99b6-576bda8ae86f.png)
 
 * **Random Forest Regression:**
 R² (Adjusted): 85.37% 
+
 Cross Validation Score (R²): 74.35%
+
 MAE: 438138.64
+
 
 ![image](https://user-images.githubusercontent.com/24629475/109429845-64af7e00-79bb-11eb-9e23-186caa5d7fc0.png)
 
