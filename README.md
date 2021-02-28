@@ -40,7 +40,7 @@ Once the data was scraped, cleaning the data was needed so it was usable for the
  * Removed 1 property that was an outlier with misleading information
 
 ## Exploratory Data Analysis (EDA)
-After the data was cleaned, I performed a EDA to get a better understanding of the situation and my data. Below are some of the more significant information obtained from the EDA (for more info and graphs check the jupyter notebooks):
+After the data was cleaned, I performed an EDA to get a better understanding of the situation and my data. Below are some of the more significant information obtained from the EDA (for more info and graphs check the jupyter notebooks):
 
 ![Figure 2021-02-27 111909](https://user-images.githubusercontent.com/24629475/109428330-e4394f00-79b3-11eb-8f8d-927feea748f5.png)
 
@@ -69,6 +69,7 @@ The models I tried were:
 The Random forest was far better than the other 3 choices.
 
 * **Multiple Linear Regression:**
+
 R² (Adjusted): 55.95% 
 
 Cross Validation Score (R²): 49.95%
@@ -79,6 +80,7 @@ MAE: 772907.08
 ![image](https://user-images.githubusercontent.com/24629475/109430454-ccb39380-79be-11eb-9b22-a6f611378cc7.png)
 
 * **Support Vector Regression:**
+
 R² (Adjusted): 67.17%
 
 Cross Validation Score (R²): 56.66%
@@ -89,6 +91,7 @@ MAE: 696211.43
 ![image](https://user-images.githubusercontent.com/24629475/109430393-734b6480-79be-11eb-809a-db668e9fb71a.png)
 
 * **Decision Tree Regression:**
+
 R² (Adjusted): 75.55% 
 
 Cross Validation Score (R²): 63.06
@@ -99,6 +102,7 @@ MAE: 459040.7235284946
 ![image](https://user-images.githubusercontent.com/24629475/109430435-b60d3c80-79be-11eb-99b6-576bda8ae86f.png)
 
 * **Random Forest Regression:**
+
 R² (Adjusted): 85.37% 
 
 Cross Validation Score (R²): 74.35%
