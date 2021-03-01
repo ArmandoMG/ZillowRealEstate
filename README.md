@@ -103,14 +103,16 @@ MAE: 459040.7235284946
 
 * **Random Forest Regression:**
 
-R² (Adjusted): 85.37% 
+R² (Adjusted): 85.19% 
 
-Cross Validation Score (R²): 74.35%
+Cross Validation Score (R²): 75.28%
 
-MAE: 438138.64
+MAE: 474255.22
 
 
-![image](https://user-images.githubusercontent.com/24629475/109429845-64af7e00-79bb-11eb-9e23-186caa5d7fc0.png)
+![image](https://user-images.githubusercontent.com/24629475/109538859-ca643e80-7a7d-11eb-9ef0-786a65e23bcc.png)
 
-![image](https://user-images.githubusercontent.com/24629475/109429920-bbb55300-79bb-11eb-8a5b-7af7ce6faec1.png)
+
+![image](https://user-images.githubusercontent.com/24629475/109538793-bc162280-7a7d-11eb-92e1-94d4c68d3791.png)
+
 
