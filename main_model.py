@@ -12,12 +12,14 @@ import pandas as pd
 # Importing the dataset
 dataset = pd.read_csv('modeling_properties.csv')
 
+dataset.info()
 # =============================================================================
 # Modeling
 # =============================================================================
 X = dataset.iloc[:, :-1].values
 y = dataset.iloc[:, -1].values
-y=np.log(y) #Como la distribucion no es normal, y la log distribucion si, usamos esa para un mejor fit
+y=np.log(y) #Since the distribution its not normal, and log distribution it is, we'll use log for a better fit, we'll have to remember to transform this for the predictions
+
 
 #Encoding categorical data
 import category_encoders as ce
@@ -27,7 +29,7 @@ X= ct.fit_transform(X)
 ct =  ce.BinaryEncoder(cols=4,return_df=False);#Encoding postal_codes #calar despues con one hot tambien a ver qp
 X= ct.fit_transform(X)
 
-#RFR: 85.19 - 74.97-75.28
+#RFR: 85.19 - 75.00-75.37
 
 # Splitting the dataset into the Training set and Test set
 from sklearn.model_selection import train_test_split
@@ -44,9 +46,11 @@ regressor.fit(X_train, y_train)
 
 # Predicting the Test set results
 y_pred = regressor.predict(X_test)
-y_pred=np.exp(y_pred)
-y_test=np.exp(y_test)
+y_pred_normal=np.exp(y_pred)
+y_test_normal=np.exp(y_test)
 print(np.concatenate((y_pred.reshape(len(y_pred),1), y_test.reshape(len(y_test),1)),1))
+print(np.concatenate((y_pred_normal.reshape(len(y_pred_normal),1), y_test_normal.reshape(len(y_test_normal),1)),1))
+
 
 # Evaluating the Model Performance
 from sklearn.metrics import mean_absolute_error, r2_score

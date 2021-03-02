@@ -68,6 +68,9 @@ dataset['price'] = dataset['price'].str.replace('+','')
 dataset['price'] = dataset['price'].str.replace('$','')
 dataset['price'] = dataset['price'].str.replace(',','')
 
+
+dataset['beds'] = dataset['beds'].str.replace('0',dataset['beds'].mode()[0])
+
 dataset.head()
 
 #Great, now lets just convert from type object to float, since we are interested in floats for further analysis and modeling
@@ -77,6 +80,9 @@ dataset["sq_feet"] = pd.to_numeric(dataset["sq_feet"], downcast="float")
 dataset["price"] = pd.to_numeric(dataset["price"], downcast="float")
 dataset.info()
 
+dataset['baths'] = dataset['baths'].replace(0.0,dataset['baths'].mode()[0])
+dataset['sq_feet'] = dataset['sq_feet'].replace(0.0,dataset['sq_feet'].mean())
+
 print(dataset['title'].unique())
 print(len(dataset['title'].unique()))
 
@@ -85,6 +91,8 @@ print(len(dataset['title'].unique()))
 #We could use the mode, but that would mean suppositions from my part, and I want the model to be very accurate
 #Also, 891 observations is plenty of data for this type of problem.
 dataset = dataset[dataset['provider'].notna()]
+
+dataset.head()
 
 #Now our dataset is ready for analysis and modeling
 

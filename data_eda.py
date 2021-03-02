@@ -79,7 +79,7 @@ dataset.title.value_counts()
 print(len(dataset['title'].unique()))
 
 #number of providers selling properties (how many providers are selling right know in SF)
-dataset.provider.value_counts()
+dataset.provider.value_counts().head()
 print(len(dataset['provider'].unique()))
 
 
