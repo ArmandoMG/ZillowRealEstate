@@ -18,6 +18,8 @@
 
 **Scraper github:** https://gist.github.com/scrapehero/5f51f344d68cf2c022eb2d23a2f1cf95
 
+**Zillow.com (Where did I obtained the data?)** https://www.zillow.com/san-francisco-ca/
+
 ## Web Scraping
  Modify the web scrapper (github reference above) to scrape 1000+ properties info from Zillow.com. Each propertie have the following features:
  * Title (What type of property is? House, Condo, New construction, Under Contract, etc)
@@ -115,4 +117,4 @@ MAE: 474255.22
 
 ![image](https://user-images.githubusercontent.com/24629475/109538793-bc162280-7a7d-11eb-92e1-94d4c68d3791.png)
 
-
+**IMPORTANT NOTE: ANY IMPROVEMENT/TIP/INDICATION/ETC ITS MORE THAN WELCOME BECAUSE I'D LIKE TO LEARN FROM MY MISTAKES**
