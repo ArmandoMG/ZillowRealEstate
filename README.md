@@ -5,6 +5,7 @@
 * Scraped 1000+ properties descriptions from Zillow.com using selenium and python
 * Performed Data cleaning in the scraped data to prepare the dataset for analyzing and modeling
 * Performed EDA on the cleaned data
+* Used flask to put the model into production (API client)
 
 **NOTE: FOR A BETTER EXPLANATION OF THE GRAPHS, CODE, AND LOGIC BEHIND MY REASONING, CHECK THE JUPYTER NOTEBOOKS IN THE REPO**
 
@@ -13,6 +14,8 @@
 **Python Version:** 3.8
 
 **Spyder Version:** 4.1.4
+
+**For Web Framework Requirements:** pip install -r requirements.txt
 
 **Packages:** sklearn, pandas, numpy, selenium, matplotlib, seaborn
 
