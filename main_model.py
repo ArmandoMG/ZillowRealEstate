@@ -76,3 +76,12 @@ plt.title('Predictions vs Test Results')
 plt.xlabel('Predictions')
 plt.ylabel('Test Results')
 plt.show()
+
+import pickle
+pickl = {'model': regressor}
+pickle.dump( pickl, open( 'model_file' + ".p", "wb" ) )
+
+file_name = "model_file.p"
+with open(file_name, 'rb') as pickled:
+    data = pickle.load(pickled)
+    model = data['model']

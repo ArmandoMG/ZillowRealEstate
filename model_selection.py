@@ -103,6 +103,7 @@ rf_random = RandomizedSearchCV(estimator = rf, param_distributions = random_grid
 rf_random.fit(X_train, y_train)
 
 rf_random.best_params_
+rf_random.best_estimator_
 rf_random.best_score_ #77.96
 
 
